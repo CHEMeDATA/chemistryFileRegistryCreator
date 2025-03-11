@@ -1,6 +1,6 @@
 # chemistryFileRegistryCreator
 
-Javascript to generate list of chemistry-relevant files from chemistry-data repository
+Javascript to generate list of chemistry-relevant files from chemistry-data repository.
 
 # Installation
 
@@ -11,7 +11,8 @@ npm install unzipper
 
 # Download Zenodo data
 
-To use the Zenodo API, you have to get an [access token](./zenodoToken/README.md). 
+To use the Zenodo API, you have to get an [access token](./zenodoToken/README.md).
+
 Get all records for a given author:
 ```bash
 node src/getRecordForAuthor.js --authorName "Damien Jeannerat" --userName "DamienJeanneratAsUserName"
@@ -28,6 +29,9 @@ The decompresed files are in the `./resultsSearch/Search_1_11_3_2025_14h53m49s/R
 
 Metadata are in the `./resultsSearch/Search_1_11_3_2025_14h53m49s/Results/theZenodo_3271696/metadataFile/metadata.json` file.
 
+# registry generation
+
+TO DO ...
 
 # Acknowledgements
 
