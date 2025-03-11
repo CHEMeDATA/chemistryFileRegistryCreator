@@ -17,9 +17,9 @@ const argv = yargs(hideBin(process.argv)).options({
     userName: { type: 'string', demandOption: false, alias: 'u' }
 }).argv;
 
-const tokenFilePath = './zenodoToken/access_token.txt';
-const ACCESS_TOKEN = fs.readFileSync(tokenFilePath, 'utf8').trim();
-
+//const tokenFilePath = './zenodoToken/access_token.txt';
+const tokenFilePath = path.join(".","zenodoToken","access_token.txt");
+const ACCESS_TOKEN = fs.readFileSync(tokenFilePath, 'utf8').replace(/\r\n/g, '\n').trim();
 const downloadFile = async (downloadUrl, savePath) => {
     const writer = fs.createWriteStream(savePath);
     const response = await axios({
