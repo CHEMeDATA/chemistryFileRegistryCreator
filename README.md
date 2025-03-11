@@ -15,6 +15,8 @@ To use the Zenodo API, you have to get an [access token](./zenodoToken/README.md
 
 Get all records for a given author:
 ```bash
+rm -r resultsSearch
+
 node src/getRecordForAuthor.js --authorName "Damien Jeannerat" --userName "DamienJeanneratAsUserName"
 node src/getRecordForAuthor.js --authorName "Mate Erdelyi" --userName "DamienJeanneratAsUserName"
 ```
